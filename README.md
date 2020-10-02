@@ -7,10 +7,9 @@
 /home/data/wangxianke/lstm_model/onset_lstm_11/model.ckpt-140000,/home/data/wangxianke/lstm_model/pitch_noeb_no_loss_weight/model.ckpt-34000
 ```
 
-
 <div>
-<style type="text/css"> table {text-align:center} </style>
 <table class="table">
+    <style type="text/css"> table {text-align:center} </style>
     <tr>
         <th rowspan=2></th>
         <th colspan=3>train</th>
@@ -50,6 +49,7 @@
     </tr>
 </table>
 </div>
+
 
 
 ## 当前模型超参数
@@ -129,13 +129,12 @@ ctrl+b [ + pageup/pagedown # 实现tmux上下翻页
   3. 训练onset
 
      设置train_onset.py参数，以下参数是默认配置，不用更改
-
-     ```python
-   train_examples = 7964744
+       ```python
+     train_examples = 7964744
      save_checkpoints_steps = 2500
-   initial_lr = 0.001
+     initial_lr = 0.001
      train_dir = '/home/data/wangxianke/lstm_win_17_noeb_onset_11/train/onset'
-     ```
+       ```
   
    设置完参数之后，在tmux内运行train_onset.py
   
