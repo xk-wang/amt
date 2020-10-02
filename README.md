@@ -132,26 +132,26 @@ ctrl+b [ + pageup/pagedown # 实现tmux上下翻页
 
      设置train_onset.py参数，以下参数是默认配置，不用更改
 
-     ```sh
-train_examples = 7964744
+     ```python
+   train_examples = 7964744
      save_checkpoints_steps = 2500
-initial_lr = 0.001
+   initial_lr = 0.001
      train_dir = '/home/data/wangxianke/lstm_win_17_noeb_onset_11/train/onset'
      ```
-
-     设置完参数之后，在tmux内运行train_onset.py
   
-  4. 训练train_pitch
-
+   设置完参数之后，在tmux内运行train_onset.py
+  
+4. 训练train_pitch
+  
      设置train_pitch.py参数，以下是默认配置，不用更改
-
-     ```shell
+  
+     ```python
    train_examples = 4063661
    save_checkpoints_steps = 2000
-   initial_lr = 0.0001
+ initial_lr = 0.0001
    train_dir = '/home/data/wangxianke/lstm_win_17_noeb/train/pitch'
      ```
-
+  
      设置完参数之后，在tmux内运行train_pitch.py
 
 ### 验证
