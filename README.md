@@ -7,10 +7,9 @@
 /home/data/wangxianke/lstm_model/onset_lstm_11/model.ckpt-140000,/home/data/wangxianke/lstm_model/pitch_noeb_no_loss_weight/model.ckpt-34000
 ```
 
+
 <div>
-<style type="text/css">
-    table {text-align:center}
-</style>
+<style type="text/css"> table {text-align:center} </style>
 <table class="table">
     <tr>
         <th rowspan=2></th>
@@ -51,7 +50,6 @@
     </tr>
 </table>
 </div>
-
 
 
 ## 当前模型超参数
@@ -150,7 +148,7 @@ ctrl+b [ + pageup/pagedown # 实现tmux上下翻页
    save_checkpoints_steps = 2000
  initial_lr = 0.0001
    train_dir = '/home/data/wangxianke/lstm_win_17_noeb/train/pitch'
-     ```
+   ```
   
      设置完参数之后，在tmux内运行train_pitch.py
 
@@ -184,12 +182,13 @@ ctrl+b [ + pageup/pagedown # 实现tmux上下翻页
         ![alt tensorboard](tensorboard.png "tensorboard")
 
         - 使用pandas从csv文件中找到f1值最好的模型
-        ```python
-        import pandas as pd
-        path = 'csv文件路径的地址'
-     data = pd.read_csv(path)
-        print(data.sort_values('Value')) # Value即是f1的值，从最终结果中便能找到最好模型的step
-        ```
+        
+          ```python
+          import pandas as pd
+         path = 'csv文件路径的地址'
+          data = pd.read_csv(path)
+          print(data.sort_values('Value')) # Value即是f1的值，从最终结果中便能找到最好模型的step
+          ```
         
      3. 得到f1值的最好模型后，返回到tensorboard中观察该模型的精确率，召回率，**并记录下精确率、召回率、f1值**。
   
