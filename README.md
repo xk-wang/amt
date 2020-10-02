@@ -184,7 +184,7 @@ ctrl+b [ + pageup/pagedown # 实现tmux上下翻页
         
           ```python
           import pandas as pd
-        path = 'csv文件路径的地址'
+          path = 'csv文件路径的地址'
           data = pd.read_csv(path)
           print(data.sort_values('Value')) # Value即是f1的值，从最终结果中便能找到最好模型的step
           ```
